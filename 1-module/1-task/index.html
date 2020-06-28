@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>CounterButton</title>
+  <style type="text/css">
+  	[v-cloak] {
+  		display: none;
+  	}
+  </style>
 </head>
 <body>
 
 <!-- Решение -->
 <main id="app">
-	<button :value="counter" @click="increaseValue()">{{ counter }}</button>
+	<button :value="counter" @click="increaseValue()" v-cloak>{{ counter }}</button>
 </main>
 
 <script type="module" src="script.js"></script>
